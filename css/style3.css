@@ -2,6 +2,7 @@ body{
 	font-family: sans-serif;
 	background-color: lavender;
 
+
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -19,13 +20,14 @@ body{
         flex-direction: column;
 
        
-		transform: translateY(600px);
-
+		transform: translateY(-100%);
+		transition: all 1s;
 		animation-name: myani;
-		animation-duration: 6.5s;
+		animation-duration: 10s;
 		animation-timing-function: linear;
 		animation-iteration-count: infinite;
-		animation-delay: 0.1s;
+		
+		
 	}
 	.container img{
 		width: 190px;
@@ -50,51 +52,50 @@ body{
         text-shadow: 0 0 7px red, 0 0 50px tomato;
 
         animation-name: myletter;
-		animation-duration: 4.5s;
+		animation-duration: 4s;
 		animation-timing-function: linear;
 		animation-iteration-count: infinite;
+		/* animation-delay: 0.1s; */
 	}
-	ul li:nth-child(0){
-		animation-delay: 0.3s;
-	}
+	
 	ul li:nth-child(1){
-		animation-delay: 0.6s;
+		animation-delay: 0.2s;
 	}
     ul li:nth-child(2){
-		animation-delay: 0.9s;
+		animation-delay: 0.4s;
 	}
 	ul li:nth-child(3){
-		animation-delay: 1.2s;
+		animation-delay: 0.6s;
 	}
 	ul li:nth-child(4){
-		animation-delay: 1.5s;
+		animation-delay: 0.8s;
 	}
 	ul li:nth-child(5){
-		animation-delay: 1.8s;
+		animation-delay: 1s;
 	}
 	ul li:nth-child(6){
-		animation-delay: 2.1s;
+		animation-delay: 1.2s;
 	}
 	ul li:nth-child(7){
-		animation-delay: 2.4s;
+		animation-delay: 1.4s;
 	}
 	ul li:nth-child(8){
-		animation-delay: 2.7s;
+		animation-delay: 1.6s;
 	}
 	ul li:nth-child(9){
-		animation-delay: 3s;
+		animation-delay: 1.8s;
 	}
 	ul li:nth-child(10){
-		animation-delay: 3.3s;
+		animation-delay: 2s;
 	}
 	ul li:nth-child(11){
-		animation-delay: 3.6s;
+		animation-delay: 2.2s;
 	}
 	ul li:nth-child(12){
-		animation-delay: 3.9s;
+		animation-delay: 2.4s;
 	}
 	ul li:nth-child(13){
-		animation-delay: 4.2s;
+		animation-delay: 2.6s;
 	}
 	
 
@@ -110,7 +111,7 @@ span img{
     transition: all 1s;
 
     animation-name: flyballoons;
-    animation-duration: 4.5s;
+    animation-duration: 10s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
  
@@ -120,20 +121,20 @@ span img:nth-child(1){
     left:0;
     transform:translateY(500px) rotate(30deg);
 
-    animation-delay: 0.2s;
+    animation-delay: 2s;
 }
 span img:nth-child(2){
 	
 	left: 20%;
 	
-	animation-delay: 0.4s;
+	animation-delay: 4s;
 }
 span img:nth-child(3){
 	
 	left: 30%;
 	color: transparent;
 
-	animation-delay: 0.6s;
+	animation-delay: 6s;
 }
 span img:nth-child(4){
 	
@@ -142,33 +143,33 @@ span img:nth-child(4){
 
 	transform:translateY(500px) rotate(-30deg);
 
-	animation-delay: 0.8s;
+	animation-delay: 8s;
 }
 span img:nth-child(5){
 	
 	right: 10%;
-	animation-delay: 1s;
+	animation-delay: 10s;
 }
 span img:nth-child(6){
 	
 	right: 0;
-	animation-delay: 1.2s;
+	animation-delay: 12s;
 }
 span img:nth-child(7){
     width:60px; 
 	left:55%;
-	animation-delay: 1.4s;
+	animation-delay: 14s;
 }
 
 span img:nth-child(8){
     width:20px; 
 	left:15%;
-	animation-delay: 1.6s;
+	animation-delay: 16s;
 }
 span img:nth-child(9){
     width:40px; 
 	left:35%;
-	animation-delay: 1.8s;
+	animation-delay: 18s;
 }
 span img:nth-child(10){
     width:20px; 
@@ -195,10 +196,10 @@ span img:nth-child(10){
 
 	@keyframes myani{
 		0%{
-           transform: translateY(600px);
+           transform: translateY(100%);
 		}
 		100%{
-			transform: translateY(-600px);
+			transform: translateY(-100%);
 		}
 	}
     
@@ -209,7 +210,7 @@ span img:nth-child(10){
                text-shadow: none;
                opacity: 0;
 		}
-		90%{
+		85%{
 			color: #000;
 			text-shadow: none;
 
@@ -231,4 +232,5 @@ span img:nth-child(10){
         transform: translateY(-700px);
 	}
 }
+
 
