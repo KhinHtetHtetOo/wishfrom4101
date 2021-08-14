@@ -178,13 +178,18 @@ span img:nth-child(10){
 }
 
 
-.teampage{ width: 120px;
+.teampage{ 
+	    width: 120px;
         background-color: transparent;
         padding: 10px 20px;
 
         border-radius: 5px;
 
-        transform: translate(465px,450px);
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+
+
       }
 .teampage a{
 	text-decoration: none;
@@ -232,5 +237,4 @@ span img:nth-child(10){
         transform: translateY(-700px);
 	}
 }
-
 
